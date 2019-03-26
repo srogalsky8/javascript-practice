@@ -10,3 +10,9 @@
 * Arrow functions don't have their own `this`. Taken from outer function.
 ### Map
 * Map allows for keys of any data type -> doesn't convert to string like objects
+### Prototypal inheritance
+```
+SubClass.prototype.__proto__ = BaseClass.prototype;
+// or like this:
+SubClass.prototype = Object.create(BaseClass.prototype);
+```
