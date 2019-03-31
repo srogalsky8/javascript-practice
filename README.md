@@ -16,3 +16,13 @@ SubClass.prototype.__proto__ = BaseClass.prototype;
 // or like this:
 SubClass.prototype = Object.create(BaseClass.prototype);
 ```
+### Promises
+```
+new Promise(
+    (resolve, reject) => resolve(1) // (*)
+).then(
+    result => console.log(result) // (**)
+);
+```
+* (*) promise executor
+* (**) promise handler
