@@ -29,4 +29,6 @@ new Promise(
 
 When a promise is ready, its .then/catch/finally handlers are put into the queue. They are not executed yet. Javascript engine takes a task from the queue and executes it, when it becomes free from the current code.
 ![](http://javascript.info/article/microtask-queue/promiseQueue.png)
+*  .then/catch/finally is called after the current code is finished.
 *  Microtask queue has a higher priority than the macrotask queue.
+*  As a side effect, macrotasks are handled only when promises give the engine a “free time”. -> Macrotasks run after the code is finished and after the microtask queue is empty.
