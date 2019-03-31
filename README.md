@@ -27,5 +27,6 @@ new Promise(
 * (*) promise executor
 * (**) promise handler
 
-* When a promise is ready, its .then/catch/finally handlers are put into the queue. They are not executed yet. Javascript engine takes a task from the queue and executes it, when it becomes free from the current code.
+When a promise is ready, its .then/catch/finally handlers are put into the queue. They are not executed yet. Javascript engine takes a task from the queue and executes it, when it becomes free from the current code.
 ![](http://javascript.info/article/microtask-queue/promiseQueue.png)
+*  Microtask queue has a higher priority than the macrotask queue.
