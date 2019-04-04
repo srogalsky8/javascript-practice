@@ -7,6 +7,7 @@ class Tester {
 
 let test = new Tester()
 console.log(test.getX()) // 1 - uses this of constructor()
+// https://stackoverflow.com/a/48920356/6206295
 console.log(test)
 
 let test2 = {
