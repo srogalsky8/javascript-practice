@@ -32,3 +32,5 @@ When a promise is ready, its .then/catch/finally handlers are put into the queue
 *  .then/catch/finally is called after the current code is finished.
 *  Microtask queue has a higher priority than the macrotask queue.
 *  As a side effect, macrotasks are handled only when promises give the engine a “free time”. -> Macrotasks run after the code is finished and after the microtask queue is empty.
+### Modules
+* Modules are executed only once when there are multiple imports.  Good for configuration, where module values are set only on first import, and then used throughout all imports.
